@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="template2.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet"> 
+	<title>Midterm Assignment 2</title>
+	<style>
+           body{font-family: 'Oswald', monospace;font-size: 15px;font-weight: 400; line-height: 2.5em;}
+            .inner_main_menu {
+				margin: 0 auto;
+				width: 1300px;
+				background-color: #3D3D3D;
+			}
+			
+            .inner_main_menu ul {
+				margin: 25px; 
+				padding: 18px 0 0;
+				list-style: none;
+				text-align: right;
+			} 
+			
+            .inner_main_menu ul li {
+				float: none; 
+				display: inline-block;
+				position: relative
+			}   
+			
+            .inner_main_menu ul li:nth-child(1) {
+				float: left;
+			}
+			
+            .inner_main_menu ul li a {
+				color: #A6A6A6;
+				font-size: 20px; 
+				text-transform: uppercase;
+				text-decoration: none; 
+				display: block;
+				padding: 10px 20px;
+			}    
+            
+			.inner_main_menu ul li a:hover {
+				color: #6FDA44
+			} 
+			
+            .inner_main_menu ul li ul {
+				position: absolute;
+				top: 40px; 
+				left: -9999999px; 
+				width: 200px;
+				background: #262626; 
+				padding: 0;
+			}  
+            
+			.inner_main_menu ul li:hover ul {
+				left: 0px;
+			}   
+            
+			.inner_main_menu ul li ul li {
+				float: left;
+				width: 100%;
+				text-align: left;
+			}  
+            
+			.inner_main_menu ul li ul li a {
+				color: #fff;
+				text-transform: capitalize;
+				font-size: 15px;
+			}  
+            
+			.inner_main_menu ul li ul li a:hover {
+				background: #ddd; 
+				color: #262626;
+			}  
+            
+			.inner_main_menu ul li ul li ul {
+				top: 0; 
+				left: -999999px;
+			}  
+            
+			.inner_main_menu ul li:hover ul li ul {
+				top: 0; 
+				left: -999999px;
+			}  
+            
+			.inner_main_menu ul li ul li:hover ul {
+				top: 0; 
+				left: 200px;
+			}  
+            
+			.inner_main_menu ul li:hover a {
+				color: #6FDA44
+			}  
+            
+			.inner_main_menu ul li:hover ul li a {
+				color: #ffffff
+			}  
+            
+			.inner_main_menu ul li ul li a:hover {
+				color: #262626
+			}  
+            
+			.inner_main_menu ul li ul li:hover a {
+				background: #ddd; 
+				color: #262626;
+			}  
+            
+			.inner_main_menu ul li ul li:hover ul li a {
+				background: #262626; 
+				color: #fff;
+			}  
+            
+			.inner_main_menu ul li ul li ul li a:hover {
+				background: #ddd; 
+				color: #262626;
+			}  
+            
+			.slicknav_menu {
+              background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+              font-size: 16px;
+              padding: 5px;
+              display: none;    
+              position: fixed;
+              right: 0;
+              width: 100%;
+              z-index: 99999;
+            }
+            
+			ul.slicknav_nav {
+              background: #262626 none repeat scroll 0 0;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 80%;
+            }
+            
+			.slicknav_btn {top: 35px;}
+				#main_menu{width: 100%; 
+				position: relative;
+			}
+            
+			.logo_area {
+				width: 300px; 
+				height: 400px; 
+				position: absolute; 
+				left: 50%; 
+				top: 0; 
+				content: ""; 
+				margin-left:-150px;
+				text-align: center; 
+			}
+			
+            @media only screen and (min-width: 200px) and (max-width: 767px) { 
+                .slicknav_menu {
+					display: block;
+				}
+				
+                .inner_main_menu {
+					display: none;
+				}
+                
+				.logo_area {
+					height: auto;
+					left: 0;
+					margin-left: 0;
+					position: relative;
+					top: 0;
+					width: 130px;
+				}
+                
+				.logo_area img {
+					height: auto;
+					width: 100%;
+				}
+            }
+        </style>
+</head>
+<body>
+		<div id="main_menu">
+            <div class="logo_area">
+                <a href="template1.html"><img src="images/tlogo.png" alt=""></a>
+            </div>
+            <div class="inner_main_menu">
+                <ul id="menu">
+					<li><p style="font-size:20px; display:inline; color:#CFCFCF">Technology Knows</p></li>
+                    <li><a href="template5.html">Download</a></li>
+                    <li><a href="template6.html">Contact</a></li>
+                    <li><a href="template2.html">Log-In</a></li>
+                </ul>
+            </div>
+        </div>
+
+<h2><center>Social Login Form</center></h2>
+<center><p style="font-size:17px;">Login your credentials on this page. You may login with your social media platforms or you may login with your credentials here upon signing up.</p></center>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Login with Social Media or Manually</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

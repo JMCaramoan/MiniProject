@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Midterm Assignment 2</title>
+<style>
+* {
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+body{
+	background: url('images/technology6.gif');
+	background-size: contain;
+}
+
+.columns1 {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.columns2 {
+  float: right;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  background-color: #121212;
+}
+
+.price .grey {
+  background-color: #121212;
+  font-size: 20px;
+}
+
+.price p {
+  background-color: #121212;
+  border-bottom: 5px solid #121212;
+  padding: 10px;
+  text-align: center;
+}
+
+.desc{
+	padding: 0px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* HOVER TOP BUTTON GLOW */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+
+  box-sizing: border-box;
+}
+.btnTop a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 30px 0;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  overflow: hidden;
+  margin-right: 25px;
+  
+}
+
+.btnTop a:hover{
+    background: #757575;
+    color: #ECEFF1;
+    box-shadow: 0 0 5px #757575,
+                0 0 25px #757575,
+                0 0 50px #757575,
+                0 0 200px #757575;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #ECEFF1);
+}
+.btnTop a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.btnTop a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.btnTop a span{
+    position: absolute;
+    display: block;
+}
+.btnTop a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#EA4A39);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.btnTop a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#D72EEB);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.btnTop a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#EA4A39);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+.btnTop a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#D72EEB);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+a{
+	text-decoration: none;
+	color: #D9F3F7;
+}
+a:hover{
+	transition:0.3s;
+	text-decoration: none;
+	color: green;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;font-size:3em;padding:0px;margin:0px;">Portfolio</h2>
+<div class="box">
+<div class="columns1">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Caramoan - Portfolio</li>
+    <li><a href="MidActivity1-1_CARAMOAN.php">Midterm Act 1</a></li>
+    <li><a href="MidActivity2_CARAMOAN.php">Midterm Act 2</a></li>
+    <li><a href="MidActivity3_CARAMOAN.php">Midterm Act 3</a></li>
+    <li><a href="MID_QUIZ1_CARAMOAN.php">Midterm Quiz 2</a></li>
+	<li class="grey"><a href="MID_EXAM_CARAMOAN.php">Midterm Exam</a></li>
+	<li><a href="FinActivity1_CARAMOAN.php">Finals Act 1</a></li>
+  </ul>
+</div>
+
+
+
+<div class="columns2">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Martin - Portfolio</li>
+    <li><a href="#">Midterm Act 1</a></li>
+    <li><a href="#">Midterm Act 2</a></li>
+    <li><a href="#">Midterm Act 3</a></li>
+    <li><a href="#">Midterm Quiz 2</a></li>
+	<li class="grey"><a href="#">Midterm Exam</a></li>
+	<li><a href="#">Finals Act 1</a></li>
+  </ul>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<center>
+<div class="btnTop" id="btnTop"><a href="template1.html" style="color:#ffffff;display:inline-block;">
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>Back to Homepage &#8593;</a>
+    </div>
+</center>
+</body>
+</html>
